@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Contacts.App">
+    <Application.Resources>
+        <ResourceDictionary>
+             <Color x:Key="Primary">#009dcc</Color>
+            <Color x:Key="PrimaryDark">#008fba</Color>
+            <Color x:Key="Accent">#F9AE00</Color>
+            <Color x:Key="AccentLight">#e5a000</Color>
+            <Color x:Key="AccentDark">#f99b00</Color>
+
+            <Style TargetType="NavigationPage">
+                <Setter Property="BarBackgroundColor" Value="{StaticResource Primary}" />
+                <Setter Property="BarTextColor" Value="#ffffff" />
+            </Style>
+
+             <Style TargetType="Button" x:Key="PrimaryButton">
+                <Setter Property="BackgroundColor" Value="{StaticResource Accent}" />
+                <Setter Property="TextColor" Value="#333333" />
+                <Setter Property="FontAttributes" Value="Bold" />
+            </Style>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Contacts.NuevoContactoPage">
+    <ContentPage.Content>
+
+        <ScrollView>
+         <StackLayout Padding="16">
+            <Label Text="Nombre"/>
+            <Entry Placeholder="Mi nombre" Keyboard="Default" Margin="0, 0, 0, 16" x:Name="Nombre"/>                            
+            <Label Text="Correo"/>
+            <Entry Placeholder="micorreo@ejemplo.com" Keyboard="Email" Margin="0, 0, 0, 16" x:Name="Correo"/>
+             <Label Text="Teléfono"/>
+            <Entry Placeholder="6861234567" Keyboard="Numeric" Margin="0, 0, 0, 16" x:Name="Telefono"/>
+            <Button Text="Guardar" Clicked="Handle_Clicked"/>
+        </StackLayout>
+        </ScrollView>
+        
+    </ContentPage.Content>
+</ContentPage>
